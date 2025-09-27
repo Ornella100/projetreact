@@ -1,0 +1,119 @@
+
+/* ----- Base ----- */
+.body {
+  margin-top: 20px;
+  padding-top: 40px;
+  background: #eeeeee;
+  padding-bottom: 30px;
+}
+
+.body h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.body p {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+/* ----- Grid ----- */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ----- Card ----- */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding-top: 15px;
+}
+
+.card-icon {
+  background-color: #c3f3c5ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* ----- Media Queries ----- */
+@media (max-width: 992px) {
+  .grid-container {
+    gap: 15px;
+    padding: 15px;
+  }
+  .card img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 15px;
+  }
+  .card img {
+    height: 140px;
+  }
+  .body p {
+    font-size: 0.9rem;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card img {
+    height: 120px;
+  }
+  .card h3 {
+    font-size: 0.95rem;
+  }
+  .card p {
+    font-size: 0.85rem;
+  }
+}

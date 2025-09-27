@@ -1,0 +1,141 @@
+
+.footer {
+  background: #f8f9fa;
+  padding: 50px 40px 20px 40px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Layout : on contrôle explicitement la taille de chaque colonne
+   et on gère les espaces avec des marges ciblées (donc pas de gap égal) */
+.footer-top {
+  display: flex;
+  flex-wrap: nowrap;            /* pas de wrap par défaut pour garder l'alignement */
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Valeurs par défaut pour chaque colonne (pour fallback) */
+.footer-col {
+  flex: 0 0 auto;
+  min-width: 180px;
+  box-sizing: border-box;
+}
+
+/* Colonne gauche (logo + texte) → plus large */
+.footer-col:first-child {
+  flex-basis: 52%;
+  max-width: 52%;
+  margin-right: 48px; /* grand espace entre la gauche et la colonne centrale */
+}
+
+/* Colonne centrale (Liens rapides) → taille moyenne */
+.footer-col:nth-child(2) {
+  flex-basis: 22%;
+  max-width: 22%;
+  margin-right: 18px; /* espace plus petit entre centre et droite */
+}
+
+/* Colonne droite (Contact) → un peu plus étroite */
+.footer-col:nth-child(3) {
+  flex-basis: 20%;
+  max-width: 20%;
+  /* pas de margin-right pour coller au bord droit */
+}
+
+/* Typographie et espacements internes */
+.footer-col h2.logo {
+  color: #4CAF50;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: pacifico;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.footer-col h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-col ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #4CAF50;
+}
+
+/* Icônes réseaux sociaux */
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  background: #eaeaea;
+  color: #333;
+  font-size: 16px;
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  background: #4CAF50;
+  color: #fff;
+}
+
+/* Bas du footer */
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+/* Responsive : sur petits écrans on empile et on réinitialise marges */
+@media (max-width: 900px) {
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-col {
+    flex-basis: 100% !important;
+    max-width: 100% !important;
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+  .footer-col:last-child {
+    margin-bottom: 0;
+  }
+}

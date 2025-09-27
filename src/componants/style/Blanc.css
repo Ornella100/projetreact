@@ -1,0 +1,165 @@
+.contact-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px 60px;
+  background-color: #fdfdfd;
+}
+
+
+.left-column {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  background-color: #e8f5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: #28a745;
+  flex-shrink: 0;
+  font-size: 18px;
+}
+
+.info-card-content h4 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.info-card-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.suivez-nous h4 {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+.social-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #e8f5e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #28a745;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #c8f0d0;
+}
+
+
+.contact-form {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+
+.form-group-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 0 2px #c8f0d0;
+}
+
+.textarea-field {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: #fff;
+  padding: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+}
+
+.submit-button:hover {
+  background-color: #219638;
+}
+
+#section3 {
+  scroll-margin-top: 80px; 
+}
+
+

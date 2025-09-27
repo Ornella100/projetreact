@@ -1,0 +1,97 @@
+.photo{
+    position:absolute;
+    top: 340px;
+    left: -20px;
+
+    
+}
+.imo{
+    position:relative;
+    width: 100%;
+}
+.imo .photo{
+    display: inline;
+}
+.petit{
+    color:#555;
+    font-size:0.9em;
+    
+   
+}
+.télécharger{
+     background: white;
+                padding: 10px 20px;
+                color: white;
+                border-radius: 6px;
+                border: none;
+                width: 200px;
+                height: 60px;
+                cursor: pointer;
+                font-weight: bold;
+}
+.télécharger:hover{
+          background: #51a039ff;
+color: white;
+
+}
+.version{
+          background: #51a039ff;
+ 
+                padding: 10px 20px;
+                color: white;
+                border-radius: 6px;
+                width: 170px;
+                border:solid 2px white;
+                cursor: pointer;
+                font-weight: bold;
+}
+.version:hover{
+background: white;
+color:green;
+}
+/* conteneur principal */
+.vert-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+/* Sur petit écran : une seule colonne */
+@media (max-width: 768px) {
+  .vert-container {
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 20px; /* espace réduit */
+  }
+
+  /* image */
+  .imo img {
+    height: auto; /* pas de hauteur fixe */
+  }
+
+  /* bloc email */
+  .imo,
+  .vert-container > div {
+    width: 100%; /* plein écran */
+  }
+}
+
+/* boutons Télécharger + Version Web */
+.télécharger,
+.version {
+  background-color: white;
+  color: #059669;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* sur mobile, les boutons s’empilent */
+@media (max-width: 576px) {
+  .télécharger,
+  .version {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+}
