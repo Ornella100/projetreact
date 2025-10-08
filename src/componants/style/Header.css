@@ -1,0 +1,40 @@
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #27ae60;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  
+  .li,
+  .but {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px; /* hauteur du header */
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .li.open,
+  .but.open {
+    display: flex;
+  }
+
+  .li a,
+  .but button {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
