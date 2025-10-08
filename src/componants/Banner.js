@@ -66,7 +66,7 @@ function Banner() {
 </div>
     <div style={{ padding: '10px' }}>
       {/* Boutons villes */}
-      <div style={{ marginBottom: '20px',textAlign:'center', gap: '10px',display:'flex',marginLeft:'400px', }}>
+      <div  style={{ marginBottom: '20px',textAlign:'center', gap: '10px',display:'flex',justifyContent:'center', }}>
         {cities.map(city => {
           const count = restaurants.filter(r => r.city === city).length
           return (
@@ -93,7 +93,7 @@ function Banner() {
       </div>
 
       {/* Titre */}
-      <div style={{ marginBottom: '20px', fontSize: '20px', color: '#666', marginLeft:'450px',display:'flex',}}>
+      <div   style={{ marginBottom: '20px', fontSize: '20px', color: '#666', justifyContent:'center',display:'flex',}}>
         <img src={loca} alt="images d'ajout" style={{width:'40px',height:'35px',}}/>{''}
  { restaurantsByCity.length === 1 ? (
     <div>

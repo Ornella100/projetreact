@@ -3,6 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
+
 // Import des composants
 import Banner from "./Banner";
 import Connecter from "./Connecter";

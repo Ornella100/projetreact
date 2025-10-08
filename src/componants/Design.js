@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/Design.css';
 
 import cercle from './images/cercle2.jpg';
 import cercle1 from './images/cercle1.jpg';
@@ -16,102 +17,8 @@ import { FiPhone, FiTruck } from "react-icons/fi";
 function Design() {
   return (
     <div className='body'>
-      {/* ==== STYLES INTÉGRÉS ==== */}
-      <style>{`
-        .body {
-          text-align: center;
-          padding: 40px 20px;
-          background-color: #f8f9fa;
-        }
-
-        .body h2 {
-          font-weight: bold;
-          color: #2e7d32;
-          margin-bottom: 15px;
-        }
-
-        .body p {
-          color: #555;
-          margin-bottom: 40px;
-        }
-
-        .grid-container {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          gap: 25px;
-          justify-items: center;
-          margin-bottom: 40px;
-        }
-
-        .card {
-          background: #fff;
-          border-radius: 15px;
-          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-          overflow: hidden;
-          transition: transform 0.3s ease;
-          width: 100%;
-          max-width: 320px;
-        }
-
-        .card:hover {
-          transform: translateY(-5px);
-        }
-
-        .card img {
-          width: 100%;
-          height: 180px;
-          object-fit: cover;
-        }
-
-        .card-content {
-          padding: 20px;
-        }
-
-        .card-icon {
-          margin-bottom: 10px;
-        }
-
-        .card h3 {
-          font-size: 1.2rem;
-          color: #333;
-          margin-bottom: 10px;
-        }
-
-        .card p {
-          color: #666;
-          font-size: 0.95rem;
-        }
-
-        /* ✅ Responsive design */
-        @media screen and (max-width: 992px) {
-          .grid-container {
-            grid-template-columns: repeat(2, 1fr);
-          }
-        }
-
-        @media screen and (max-width: 600px) {
-          .grid-container {
-            grid-template-columns: 1fr;
-          }
-
-          .card {
-            max-width: 90%;
-          }
-
-          .body h2 {
-            font-size: 1.5rem;
-          }
-
-          .body p {
-            font-size: 1rem;
-          }
-        }
-      `}</style>
-
       <h2>Pourquoi choisir BioBites ?</h2>
-      <p style={{ fontSize: '20px' }}>
-        Une plateforme complète pour découvrir, commander et déguster la meilleure cuisine bio du Bénin
-      </p>
+      <p style={{fontSize:'20px',}}>Une plateforme complète pour découvrir, commander et déguster la meilleure cuisine bio du Bénin</p>
 
       {/* Première ligne de cartes */}
       <div className="grid-container">
@@ -176,4 +83,4 @@ function Design() {
   );
 }
 
-export default Design;
+export default Design
