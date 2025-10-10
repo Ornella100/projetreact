@@ -163,3 +163,31 @@
 }
 
 
+/* --- Responsive : sur petit écran, le formulaire passe en dessous --- */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* empile les deux blocs */
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .left-column {
+    order: 1; /* reste en haut */
+  }
+
+  .contact-form {
+    order: 2; /* passe en dessous */
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr; /* même sur très petit écran, deux colonnes */
+    gap: 15px;
+  }
+  p{
+    font-size: 0.2em;
+  }
+}

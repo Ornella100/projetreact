@@ -71,10 +71,12 @@ function Banner() {
           const count = restaurants.filter(r => r.city === city).length
           return (
             <button
+            className="city-button"
               key={city}
               onClick={() => {
                 setSelectedCity(city)
                 setSelectedRestaurant(null)
+                
               }}
               style={{
                 padding: '8px 16px',

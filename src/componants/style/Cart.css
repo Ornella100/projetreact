@@ -1,4 +1,4 @@
- .aro{
+.aro{
      position: absolute;
   top: 50%;
   right: -15px; 
@@ -41,3 +41,43 @@
 }
 
   
+/* --- Ajustement du texte sur petit écran --- */
+@media (max-width: 768px) {
+  #section2 h2 {
+    font-size: 1.3rem; /* titre plus petit */
+  }
+
+  #section2 p.fs-5 {
+    font-size: 0.95rem; /* texte d’intro */
+    width: 85% !important;
+  }
+
+  #section2 .flex-fill p {
+    font-size: 0.85rem; /* texte dans les cartes */
+    line-height: 1.4;
+    padding: 0 5px;
+  }
+
+  #section2 .flex-fill .fw-bold {
+    font-size: 0.95rem; /* titre des cartes */
+  }
+}
+
+/* --- Très petit écran (téléphones étroits) --- */
+@media (max-width: 480px) {
+  #section2 h2 {
+    font-size: 1.1rem;
+  }
+
+  #section2 p.fs-5 {
+    font-size: 0.9rem;
+  }
+
+  #section2 .flex-fill p {
+    font-size: 0.8rem;
+  }
+
+  #section2 .flex-fill .fw-bold {
+    font-size: 0.9rem;
+  }
+}

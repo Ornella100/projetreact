@@ -40,15 +40,7 @@ const Blanc = () => {
           </div>
         </div>
 
-        <div className="suivez-nous">
-          <h4>Suivez-nous</h4>
-          <div className="social-wrapper">
-            <div className="social-icon"> <FaFacebookF/></div>
-            <div   className="social-icon"><FaTwitter/></div>
-            <div className="social-icon"><FaInstagram/></div>
-            <div className="social-icon">< FaLinkedinIn/></div>
-          </div>
-        </div>
+        
       </div>
 
       
@@ -103,6 +95,16 @@ const Blanc = () => {
             Envoyer le message
           </button>
         </form>
+ <div className="suivez-nous">
+          <h4>Suivez-nous</h4>
+          <div className="social-wrapper">
+            <div className="social-icon"> <FaFacebookF/></div>
+            <div   className="social-icon"><FaTwitter/></div>
+            <div className="social-icon"><FaInstagram/></div>
+            <div className="social-icon">< FaLinkedinIn/></div>
+          </div>
+        </div>
+
       </div>
     </div>
     
