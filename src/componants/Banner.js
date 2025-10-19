@@ -23,7 +23,7 @@ import Vert from './Vert'
 
 
 const containerStyle = { width: '100%', height: '350px', borderRadius: '10px' }
-const infoStyle = { width: '35%',  }
+const infoStyle = { width: '35%', }
 
 const cities = [...new Set(restaurants.map(r => r.city))]
 
@@ -149,7 +149,7 @@ function Banner() {
         </div>
         <div className='col-6'>
         {/* Liste des restaurants */}
-<div className='overflow-scroll  'style={{ maxHeight: '370px',}}>
+<div className='overflow-scroll' style={{ maxHeight: '370px',}}>
         <div style={infoStyle}>
           {restaurantsByCity.map(r => (
             <div
@@ -162,7 +162,8 @@ function Banner() {
               <img
                 src={r.image}
                 alt={r.name}
-                style={{ width: '80px', height: '80px', objectFit: 'cover', borderRadius: '8px' ,marginRight:'15px',}}
+                className='w-25'
+                style={{ height:'auto', objectFit: 'cover', borderRadius: '8px' ,marginRight:'15px',}}
               />
             
               <div className='d-inline '>

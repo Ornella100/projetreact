@@ -94,9 +94,7 @@ function Header() {
         /* --- Menu mobile ouvert --- */
         <div className="ensemble mobile-menu">
           {/* Hamburger visible (pour fermer le menu) */}
-          <div className="menu-toggle  mb-2" onClick={() => setMenuOpen(false)}>
-             ×
-          </div>
+         
 
           {/* Liens affichés horizontalement */}
           <div className="mobile-links">
@@ -105,6 +103,11 @@ function Header() {
             <a href="#section2" className="lien">Comment ça marche</a>
             <a href="#section3" className="lien">Contact</a>
           </div>
+
+ <div className="menu-toggle  mb-2" onClick={() => setMenuOpen(false)}>
+             ×
+          </div>
+
         </div>
       )}
     </header>

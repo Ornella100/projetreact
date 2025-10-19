@@ -67,7 +67,7 @@ import im2 from './images/img2.jpg'
     id: 'lk1',
     city: 'Lokossa',
     name: 'Bio Lokossa',
-    description: 'Cuisine traditionnelle bio.FF',
+    description: 'Cuisine traditionnelle.FF',
     category: 'Restaurant Bio',
     lat: 6.630,
     lng: 1.720,
