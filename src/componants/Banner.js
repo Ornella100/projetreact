@@ -96,14 +96,14 @@ function Banner() {
 
       {/* Titre */}
       <div   style={{ marginBottom: '20px', fontSize: '20px', color: '#666', justifyContent:'center',display:'flex',}}>
-        <img src={loca} alt="images d'ajout" style={{width:'40px',height:'35px',}}/>{''}
+        <img src={loca} className='img' alt="images d'ajout"/>{''}
  { restaurantsByCity.length === 1 ? (
-    <div>
+    <div className='titre'>
       {restaurantsByCity.length} restaurant bio disponible à{" "}
       <span className="text-success">{selectedCity}</span>
     </div>
   ) : (
-    <div>
+    <div className='titre'>
       {restaurantsByCity.length} restaurants bio disponibles à{" "}
       <span className="text-success">{selectedCity}</span>
     </div>
@@ -170,7 +170,7 @@ function Banner() {
                 <h6 style={{marginBottom:'5px',fontWeight:'bold',color:'black'}}>{r.name}</h6>
                 <p style={{  fontSize: '14px',marginLeft:'0px'}}>{r.description}
                   <div className=" d-flex  "  style={{marginTop:'5px'}}>
-                 <LuMapPin className=' '  />< h6  style={{fontSize: '14px',}}> {r.kilo}</h6>
+                 <LuMapPin className='mt-1' /><strong style={{fontSize: '14px',}}> {r.kilo}</strong>
                  </div>
                 </p>
                 </div>
