@@ -1,4 +1,4 @@
-.aro{
+/*.aro{
      position: absolute;
   top: 50%;
   right: -15px; 
@@ -7,7 +7,7 @@
   border-radius: 50%;
   padding: 4px;
   
- }
+ }*/
 #section2 {
   scroll-margin-top: 80px; 
 }
@@ -32,17 +32,38 @@
   border-radius: 50%;
   padding: 4px;
 }
+.ari{
+ position: absolute;
+  top: 95%;
+  right: 120px; 
+  transform: translateY(-50%);
+  color: #4CAF50;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 4px ;
+  display: none;
+
+}
 
 
 @media (max-width: 576px) {
   .aro {
     font-size: 18px;
   }
+  .ari{
+    display: none;
+  }
 }
 
   
 /* --- Ajustement du texte sur petit écran --- */
 @media (max-width: 768px) {
+  .ari{
+    display: none;
+  }
+  .aro{
+    display: block;
+  }
   #section2 h2 {
     font-size: 1.3rem; /* titre plus petit */
   }
@@ -67,6 +88,12 @@
 @media (max-width: 480px) {
   #section2 h2 {
     font-size: 1.1rem;
+  }
+  .aro{
+    display: none;
+  }
+  .ari{
+    display: block;
   }
 
   #section2 p.fs-5 {

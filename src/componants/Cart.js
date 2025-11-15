@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react' 
 import { IoSearch } from "react-icons/io5";
+import { VscArrowDown } from "react-icons/vsc";
+
 import { LuUtensils } from "react-icons/lu";
 import {  RiShoppingCartLine  } from 'react-icons/ri';
 import { AiOutlineCreditCard } from "react-icons/ai";
@@ -51,7 +53,7 @@ function Cart(){
         <p className='fw-bold'>Trouvez</p>
         <p>Utilisez notre carte interactive pour découvrir les restaurants bio près de chez vous à Cotonou, Lokossa ou ailleurs au Bénin</p>
              <FaArrowRight size={24}  className="aro"/>
-
+ <VscArrowDown  size={24}  className="ari"/>
         </div>
 
  
@@ -90,6 +92,7 @@ function Cart(){
        <p className='fw-bold'>Choisissez</p>
         <p>Consultez les menus, les avis clients et toutes les informations détaillées sur chaque restaurant bio authentique</p>
          <FaArrowRight size={24}  className="aro"/>
+         <VscArrowDown  size={24}  className="ari"/>
         </div>
 
 <div className='flex-fill'  style={{
@@ -125,6 +128,7 @@ function Cart(){
         <p className='fw-bold'>Commandez</p>
         <p>Sélectionnez vos plats favoris, personnalisez votre commande et ajoutez-la à votre panier en quelques clics</p>
          <FaArrowRight size={24}  className="aro"/>
+        <VscArrowDown size={24}  className="ari"/>
         </div>
 
 <div className='flex-fill'  style={{
@@ -161,6 +165,7 @@ height: '250px',
         <p className='fw-bold'>Payez</p>
         <p>Réglez votre commande de manière sécurisée avec plusieurs options de paiement disponibles</p>
          <FaArrowRight size={24}  className="aro"/>
+         <VscArrowDown  size={24}  className="ari"/>
         </div>
 
 <div className='flex-fill'  style={{
@@ -195,6 +200,8 @@ style={{
          </div>
         <p className='fw-bold'>Récupérez</p>
         <p>Choisissez la livraison à domicile ou allez chercher votre repas directement au restaurant selon vos préférences</p>
+        <FaArrowRight size={24}  className="aro"/>
+         <VscArrowDown  size={24}  className="ari"/>
         </div>
 </div>
     </div>

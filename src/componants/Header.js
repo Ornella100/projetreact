@@ -80,15 +80,20 @@ function Header() {
           </div>
 
           {/* Boutons */}
-          <div className="but">
+          <div className="bout">
             <Link to="/connecter"><button className="but1">Se connecter</button></Link>
             <Link to="/inscription"><button className="but2">S'inscrire</button></Link>
           </div>
 
           {/* Hamburger (visible seulement sur petit écran) */}
-          <div className="menu-toggle" onClick={() => setMenuOpen(true)}>
-            ☰
+          <div className="">
+          <div className="menu-toggle " onClick={() => setMenuOpen(true)}>
+            ═
           </div>
+
+
+          </div>
+
         </div>
       ) : (
         /* --- Menu mobile ouvert --- */
@@ -103,12 +108,13 @@ function Header() {
             <a href="#section2" className="lien">Comment ça marche</a>
             <a href="#section3" className="lien">Contact</a>
           </div>
-
- <div className="menu-toggle  mb-2" onClick={() => setMenuOpen(false)}>
+<div className="">
+ 
+ <div className="menu-toggle" onClick={() => setMenuOpen(false)}>
              ×
           </div>
-
         </div>
+</div>
       )}
     </header>
   );

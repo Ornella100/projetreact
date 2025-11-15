@@ -169,7 +169,7 @@
 .liens-desktop{
   font-size: 2em;
   display: flex;
-  gap: 10px;
+  gap: 50px;
 }
 
 .lien:hover {
@@ -177,7 +177,7 @@
 }
 
 /* --- Boutons --- */
-.but {
+.bout {
   display: flex;
   gap: clamp(5px, 1vw, 10px);
 }
@@ -268,5 +268,4 @@
     display: block;
   }
 }
-
 

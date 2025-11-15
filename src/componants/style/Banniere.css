@@ -171,7 +171,7 @@ display:flex;
     gap: 6px;
   }
   .le-logo{
-    height: 270px;
+    height: 290px;
   }
 
    .textes {
@@ -190,10 +190,17 @@ display:flex;
     min-width: 350px;
   }
    .but3, .but4 {
-    width: 100%; /* bouton plus large sur mobile */
     font-size: 0.6rem;
-    height:10%;
+    height:90%;
     padding: 0.2rem 1.1rem;
+    
+    
+  }
+  .but{
+    display:flex;
+    gap:2px;
+    flex-direction: column;
+    margin-top: 0px;
   }
 
    .phrase3, .phrase4 {
@@ -273,14 +280,7 @@ div[style*="marginBottom: '20px'"][style*="fontSize: '20px'"] {
   min-width: 300px;
 }
 
-/* --- Bloc liste déroulante --- */
-/*
-.overflow-scroll {
-  max-height: 370px;
-  overflow-y: auto;
-}*/
 
-/* --- Carte d’un restaurant --- */
 
 
 .cat {
